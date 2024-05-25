@@ -4,12 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pa-hw-2</title>
+    <link rel="stylesheet" href="/styles/my-styles.css" />
   </head>
   <body>
     <h1>Work with inputs</h1>
     <form>
-      <label for="color-input">Pick best color:</label>
-      <input type="color" name="set-color" id="color-input" />
+      <div>
+        <label for="color-input">Pick best color:</label>
+        <input type="color" name="set-color" id="color-input" />
+      </div>
+
+      <div><input type="reset" name="reset-form" value="Reset form" /></div>
+      <div>
+        <input
+          lang="uk"
+          type="button"
+          onclick="alert('Вивчення інпутів проходить успішно')"
+          value="Натисни сюди!"
+        />
+      </div>
+
+      <div lang="uk">
+        <label for="birthday">Вкажіть дату народження:</label>
+        <input type="date" id="birthday" name="birthday" />
+        <input type="submit" value="Підтвердити" />
+      </div>
+
+      <div>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" />
+        <input type="submit" value="Send" />
+      </div>
     </form>
   </body>
 </html>
